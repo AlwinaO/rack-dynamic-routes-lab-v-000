@@ -8,6 +8,9 @@ class Application
 
 
     if req.path.match(/items/).eql?
+    else
+      resp.status = 404
+      resp.write  "Route not found"
 
 
   # req.path.match(/items/)
