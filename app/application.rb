@@ -7,14 +7,14 @@ class Application
     req = Rack::Request.new(env)
 
 
-    if req.path.match(/items/)
-    binding.pry
+    if req.path.match(/items/).eql?
+
 
   # req.path.match(/items/)
   #     item_price = @@items.collect do |item|
   #       # binding.pry
 
-    
+
 
 
     end
