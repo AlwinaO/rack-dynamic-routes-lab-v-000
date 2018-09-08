@@ -7,8 +7,9 @@ class Application
     req = Rack::Request.new(env)
 
     if req.path.match(/items/)
-      @@items.collect do |item|
+      item_price = @@items.collect do |item|
         
+
       end
 
 
