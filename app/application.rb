@@ -10,12 +10,9 @@ class Application
     if req.path.match(/items/)
     binding.pry
 
-      end
-
-
-    elsif req.path.match(/items/)
-      item_price = @@items.collect do |item|
-        # binding.pry
+  # req.path.match(/items/)
+  #     item_price = @@items.collect do |item|
+  #       # binding.pry
 
       end
 
