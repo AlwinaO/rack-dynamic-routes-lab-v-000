@@ -14,7 +14,7 @@ class Application
   #     item_price = @@items.collect do |item|
   #       # binding.pry
 
-      end
+    
 
 
     end
