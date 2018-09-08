@@ -8,10 +8,7 @@ class Application
 
 
     if req.path.match(/items/)
-      @@items.include? do |item|
-        binding.pry
-        resp.status = 404
-        resp.write  "Route not found"
+    binding.pry
 
       end
 
@@ -32,5 +29,10 @@ end
 
 
 # req.path.match(/testing/)
+#   resp.status = 404
+#   resp.write  "Route not found"
+
+# @@items.include? do |item|
+#   binding.pry
 #   resp.status = 404
 #   resp.write  "Route not found"
