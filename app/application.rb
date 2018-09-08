@@ -18,7 +18,7 @@ class Application
 
     elsif req.path.match(/items/)
       item_price = @@items.collect do |item|
-        binding.pry
+        # binding.pry
 
       end
 
