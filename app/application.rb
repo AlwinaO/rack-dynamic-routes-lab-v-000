@@ -1,6 +1,6 @@
 class Application
 
-  @@items = [Item.new("Figs",3.42),Item.new("Pears",0.99)]
+  @@items = [Item.new("Figs",3.42), Item.new("Pears",0.99)]
 
   def call(env)
     resp = Rack::Response.new
@@ -9,7 +9,7 @@ class Application
     if req.path.match(/items/)
       item_name = req.path.split("/items/").last
         binding.pry
-      item = @@items.find{|p| p.price == item_name}
+      item = @@items.find{|p| p.name == item_name}
       resp.write item.price
 
     else
