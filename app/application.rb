@@ -6,7 +6,17 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
 
+
     if req.path.match(/items/)
+      @@items.include? do |item|
+        binding.pry
+        resp.status = 404
+        resp.write  "Route not found"
+
+      end
+
+
+    elsif req.path.match(/items/)
       item_price = @@items.collect do |item|
         binding.pry
 
